@@ -309,7 +309,7 @@ function Galeria() {
       {active !== null && (
         <div role="dialog" aria-modal="true" className="fixed inset-0 z-[60] grid place-items-center bg-ink/90 p-4" onClick={() => setActive(null)}>
           <button className="absolute right-4 top-4 text-ink-foreground" aria-label="Fechar"><X className="h-8 w-8" /></button>
-          <img src={GALLERY[active].img} alt={`Imagem ilustrativa — ${GALLERY[active].label}`} className="max-h-[85vh] max-w-full rounded-xl" />
+          <img src={GALLERY[active]!.img} alt={`Imagem ilustrativa — ${GALLERY[active]!.label}`} className="max-h-[85vh] max-w-full rounded-xl" />
         </div>
       )}
     </section>
