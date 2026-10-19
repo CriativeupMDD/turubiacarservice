@@ -164,7 +164,7 @@ function Hero() {
       <img src={heroImg} alt="Carro preto em oficina mecânica moderna no Boqueirão, Curitiba" width={1600} height={912} className="absolute inset-0 h-full w-full object-cover object-[70%_center] opacity-60 md:opacity-100" fetchPriority="high" />
       <div className="absolute inset-0 bg-hero-fade" />
       <div className="relative mx-auto max-w-7xl px-4 pb-10 pt-16 sm:px-6 md:pt-24">
-        <div className="max-w-xl">
+        <div className="max-w-2xl">
           <p className="mb-4 text-xs font-semibold tracking-[0.4em] text-ink-muted">CENTRO AUTOMOTIVO EM CURITIBA</p>
           <h1 className="text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-6xl">
             SEU CARRO MERECE <span className="block text-primary-glow">CUIDADO DE VERDADE.</span>
@@ -204,8 +204,8 @@ function Services() {
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
           {SERVICES.map(({ name, icon: I, img, alt, desc }) => (
             <article key={name} className="group flex flex-col overflow-hidden rounded-xl bg-card shadow-card transition hover:-translate-y-1">
-              <div className="relative aspect-[16/10] overflow-hidden">
-                <img src={img} alt={alt} width={1024} height={656} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+              <div className="relative">
+                <div className="aspect-[16/10] overflow-hidden"><img src={img} alt={alt} width={1024} height={656} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" /></div>
                 <span className="absolute bottom-0 left-4 grid h-10 w-10 translate-y-1/2 place-items-center rounded-lg bg-primary text-primary-foreground shadow-glow">
                   <I className="h-5 w-5" aria-hidden />
                 </span>
