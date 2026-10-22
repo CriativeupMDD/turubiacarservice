@@ -14,7 +14,7 @@ import somImg from "@/assets/svc-som.jpg";
 import eletricaImg from "@/assets/svc-eletrica.jpg";
 import injecaoImg from "@/assets/svc-injecao.jpg";
 import engineImg from "@/assets/engine.jpg";
-import oficinaImg from "@/assets/oficina.jpg";
+import oficinaImg from "@/assets/sobre-turubia.jpg.asset.json";
 
 const TITLE = "Turubia Car Service | Oficina Mecânica no Boqueirão em Curitiba";
 const DESC =
@@ -266,7 +266,7 @@ function Sobre() {
   return (
     <section id="sobre" className="bg-muted">
       <div className="grid md:grid-cols-2">
-        <img src={oficinaImg} alt="Imagem ilustrativa de centro automotivo" width={1200} height={800} loading="lazy" className="h-72 w-full object-cover md:h-full" />
+        <img src={oficinaImg.url} alt="Vista aérea da Turubia Car Service, no Boqueirão, Curitiba" width={1450} height={1085} loading="lazy" className="h-72 w-full object-cover md:h-full" />
         <div className="px-4 py-16 sm:px-10 lg:px-16">
           <p className="eyebrow text-muted-foreground">Sobre nós</p>
           <h2 className="mt-3 text-3xl font-bold leading-tight">Mais que uma oficina, uma parceria para o seu dia a dia.</h2>
