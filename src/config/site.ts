@@ -3,9 +3,9 @@
 
 export const SITE = {
   name: "Turubia Car Service",
-  url: "", // ex: "https://www.turubiacar.com.br" — usado no canonical/JSON-LD
-  whatsappNumber: "", // AGUARDANDO número comercial oficial
-  googleReviewUrl: "", // AGUARDANDO link do Perfil da Empresa no Google
+  url: "https://www.turubiacarservice.com.br",
+  whatsappNumber: "5541984486537",
+  googleReviewUrl: "https://share.google/hvvmlqgGRka2FyzIW",
   address: {
     street: "Rua Bom Jesus de Iguape, 2438",
     district: "Boqueirão",

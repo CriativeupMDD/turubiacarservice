@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import { SITE, MSG_GERAL, msgServico, whatsappLink } from "@/config/site";
 import { WhatsButton, WhatsIcon } from "@/components/WhatsButton";
-import logo from "@/assets/logo-turubia.png.asset.json";
+import logo from "@/assets/logo-turubia.png";
 import heroImg from "@/assets/hero-car.jpg";
 import mecanicaImg from "@/assets/svc-mecanica.jpg";
 import esteticaImg from "@/assets/svc-estetica.jpg";
@@ -14,7 +14,7 @@ import somImg from "@/assets/svc-som.jpg";
 import eletricaImg from "@/assets/svc-eletrica.jpg";
 import injecaoImg from "@/assets/svc-injecao.jpg";
 import engineImg from "@/assets/engine.jpg";
-import oficinaImg from "@/assets/sobre-turubia.jpg.asset.json";
+import oficinaImg from "@/assets/sobre-turubia.png";
 
 const TITLE = "Turubia Car Service | Oficina Mecânica no Boqueirão em Curitiba";
 const DESC =
@@ -114,7 +114,7 @@ function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-ink-border bg-ink/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:h-20 sm:px-6">
         <a href="#inicio" className="shrink-0" aria-label="Turubia Car Service — início">
-          <img src={logo.url} alt="Logo Turubia Car Service" width={64} height={64} className="h-12 w-12 sm:h-16 sm:w-16" />
+          <img src={logo} alt="Logo Turubia Car Service" className="h-10 w-auto sm:h-14" />
         </a>
         <nav className="hidden lg:block" aria-label="Principal">
           <ul className="flex gap-8">
@@ -266,7 +266,7 @@ function Sobre() {
   return (
     <section id="sobre" className="bg-muted">
       <div className="grid md:grid-cols-2">
-        <img src={oficinaImg.url} alt="Vista aérea da Turubia Car Service, no Boqueirão, Curitiba" width={1450} height={1085} loading="lazy" className="h-72 w-full object-cover md:h-full" />
+        <img src={oficinaImg} alt="Vista aérea da Turubia Car Service, no Boqueirão, Curitiba" width={1450} height={1085} loading="lazy" className="h-72 w-full object-cover md:h-full" />
         <div className="px-4 py-16 sm:px-10 lg:px-16">
           <p className="eyebrow text-muted-foreground">Sobre nós</p>
           <h2 className="mt-3 text-3xl font-bold leading-tight">Mais que uma oficina, uma parceria para o seu dia a dia.</h2>
@@ -371,7 +371,7 @@ function Footer() {
     <footer className="border-t border-ink-border bg-ink pb-24 pt-14 text-ink-foreground md:pb-10">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-4">
         <div>
-          <img src={logo.url} alt="Logo Turubia Car Service" width={96} height={96} loading="lazy" className="h-24 w-24" />
+          <img src={logo} alt="Logo Turubia Car Service" loading="lazy" className="h-20 w-auto" />
           <p className="mt-4 text-sm text-ink-muted">Centro automotivo no Boqueirão, Curitiba/PR. Mecânica, elétrica, injeção eletrônica, estética, som e film.</p>
         </div>
         <nav aria-label="Rodapé">
